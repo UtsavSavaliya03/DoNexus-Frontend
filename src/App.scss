@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+
+@import 'color.scss';
+
+:root {
+  --primary:#{$primary};
+  --primaryLight:#{$primaryLight};
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/****** ------- Scrollbar css ------- ****** */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--primaryLight);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  transition-duration: 5s;
+  cursor: pointer;
+  background: var(--primary);
+}
+
+.ant-white-spin .ant-spin .ant-spin-dot-item {
+  background-color: white;
+}
