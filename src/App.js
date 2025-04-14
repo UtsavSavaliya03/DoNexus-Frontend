@@ -1,7 +1,19 @@
-import React from 'react'
+import './App.scss';
+import ProtectedRoute from "./routes/ProtectedRoute";
+import { initialRoutes } from "./routes/routes.js";
 
-export default function App() {
-  return (
-    <div>App</div>
-  )
-}
+const generateRoutes = (routes) => {
+  return routes.map(({ type, component: Component, ...rest }) => {
+    return {
+      element: (
+        <ProtectedRoute type={type} {...rest} >
+          <Component />
+        </ProtectedRoute>
+      ),
+      ...rest,
+    };
+  });
+};
+
+const AppWrapper = generateRoutes(initialRoutes());
+export default AppWrapper;
