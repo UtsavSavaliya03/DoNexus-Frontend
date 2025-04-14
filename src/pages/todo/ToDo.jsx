@@ -204,6 +204,12 @@ export default function ToDo() {
               <TextArea rows={4} placeholder="Description" className='mt-1' />
             </Form.Item>
           </div>
+          <div className='input-white mt-2'>
+            <label className='text-base text-[#2F2B3DCC] font-medium'>Due Date</label>
+            <Form.Item name="dueDate" className='mb-0' rules={[{ required: true, message: 'Please select due date.' }]}>
+              <DatePicker format='YYYY-MM-DD' className='w-full mt-1' size='large' disabledDate={(current) => current && current < new Date().setHours(0, 0, 0, 0)} />
+            </Form.Item>
+          </div>
           <LoadableButton
             className='bg-primary text-sm text-white font-medium uppercase px-8 py-2 mt-6 rounded-lg themeHover duration-500'
             type="submit"
@@ -228,6 +234,12 @@ export default function ToDo() {
               <label className='text-base text-[#2F2B3DCC] font-medium'>Description</label>
               <Form.Item name="description" className='mb-0' rules={[{ required: true, message: 'Please enter description.' }]}>
                 <TextArea rows={4} placeholder="Description" className='mt-1' />
+              </Form.Item>
+            </div>
+            <div className='input-white mt-2'>
+              <label className='text-base text-[#2F2B3DCC] font-medium'>Due Date</label>
+              <Form.Item name="dueDate" className='mb-0' rules={[{ required: true, message: 'Please select due date.' }]}>
+                <DatePicker format='YYYY-MM-DD' className='w-full mt-1' size='large' disabledDate={(current) => current && current < new Date().setHours(0, 0, 0, 0)} />
               </Form.Item>
             </div>
             <LoadableButton
