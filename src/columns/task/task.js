@@ -8,14 +8,6 @@ const columns = [
         dataIndex: 'description',
     },
     {
-        title: 'Due Date',
-        dataIndex: 'dueDate',
-    },
-    {
-        title: 'Status',
-        dataIndex: 'status',
-    },
-    {
         title: 'Task Created On',
         dataIndex: 'createdAt',
     },
