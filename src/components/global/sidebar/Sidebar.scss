@@ -1,0 +1,58 @@
+@import '../../../color.scss';
+
+.sidebar-container {
+
+    .ps-menu-button {
+        padding: 0px !important;
+    }
+
+    .header {
+        svg {
+            height: 24px !important;
+            width: 24px !important;
+        }
+    }
+
+    .ps-submenu-expand-icon {
+        margin-right: 22px;
+        margin-bottom: 6px;
+
+        .css-jn69v9,
+        .css-honxw6 {
+            height: 8px;
+            width: 8px;
+            border-color: #2F2B3DB2;
+        }
+    }
+
+    .ps-menu-button {
+        height: auto !important;
+    }
+
+    .ps-sidebar-root {
+        width: auto !important;
+        min-width: auto !important;
+        margin-top: 10px;
+    }
+
+    .ps-menu-button:hover,
+    .ps-sidebar-container {
+        background-color: transparent !important;
+    }
+
+    .ps-submenu-content {
+        background-color: transparent;
+    }
+
+    .ant-badge .ant-badge-count {
+        height: 15px;
+        min-width: 15px;
+        line-height: 14px;
+        padding: 0px 3px;
+        transform: translate(35%, -45%);
+        -webkit-transform: translate(35%, -45%);
+        -moz-transform: translate(35%, -45%);
+        -ms-transform: translate(35%, -45%);
+        -o-transform: translate(35%, -45%);
+    }
+}
